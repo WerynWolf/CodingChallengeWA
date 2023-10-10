@@ -9,16 +9,15 @@
 - os / os (Enable image to be written into Google Drive)
 
 
-##### Outline of Methodology
+##### Outline of Methodology (Detailed methodology found in code comments)
 - Extract image, convert to HSV (better contrast with cone surroundings)
 - Filter image on Saturation and Value to remove background
 - Smooth image to ease Blob Detection
 - Use size-filtered Blob Detection to eliminate final unwanted regions
-- Convert resultand Keypoints into usable coordinates
+- Convert resultant Keypoints into usable coordinates
 - Split Keypoint data into halves of the image to isolate cone lanes
 - Line Of Best Fit regression to get LOBF from each lane
 - Print Keypoints and LOBFs onto initial image
-Detailed methodology can be found in code comments
 
 
 ##### What Didn't Work
